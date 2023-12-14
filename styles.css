@@ -49,6 +49,7 @@ a {
     height: 1093px;
     /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
     background-image: -webkit-radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), url("./images/img-bg.png");
+    background-image: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), url("./images/img-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
