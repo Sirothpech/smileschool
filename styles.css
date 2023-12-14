@@ -8,14 +8,12 @@
     margin: 0;
 }
 header {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 1103.41px;
     height: 29.46px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 35.02px;
-    display: flex;
-    justify-content: space-between;
+    padding: 40.58px 168.295px;
 }
 
 header img {
@@ -27,59 +25,61 @@ body {
     width: 1440px;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--main-color);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.menu {
-    width: 234px;
-    left: 1041px;
-    font-weight: 500;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main_part {
     height: 1093px;
     /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-    background: 
+    /* background: 
         -webkit-radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), 
         url("./images/img-bg.png") center/cover no-repeat;
     background: 
         radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), 
-        url("./images/img-bg.png") center/cover no-repeat;
+        url("./images/img-bg.png") center/cover no-repeat; */
+    background-color: var(--main-color);
+    background-image: url("./images/img-bg.png");
+
+    background-repeat: no-repeat;
 }
 
+a {
+    text-decoration: none; 
+    font-size: 12px;
+    font-weight: 700; 
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 234px;
+    height: 15px;
+}
+
+.main_part {
+    margin-top: 110px;
+    margin-left:-8px ;
+    height: 262px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .main_part h1 {
-    position: absolute;
-    height: 151px;
-    left: 377px;
-    right: 26.32%;
-    top: 220px;
-    font-size: 120px;
-    line-height: 151px;
     text-align: center;
+    font-size: 120px;
+    font-weight: 700px;
 }
 
-.sgl {
-    position: absolute;
+.main_part p {
+    text-align: justify;
+   -webkit-text-align-last: justify;
+    text-align-last: justify; 
     width: 253px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 361px;
-    font-weight: 700;
+    height: 20px;
     font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    justify-content: space-between;
+    font-weight: 700;
 }
 
 button {
@@ -98,13 +98,17 @@ button {
 }
 
 .main_part button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 44.38%;
-    top: 419px;
-    bottom: 57.64%;
-    font-size: small;
+    margin-top: 30px;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 3px 3px 10px 3px rgba(0.25,0.25,0.25,0.25);
 }
 
 .main_part h2 { 
@@ -129,47 +133,58 @@ button {
 }
 
 .pros {
-    position: absolute;
-    width: 1009px;
-    height: 237px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 758px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pro {
-    width: 150;
-    height: 237px;
-    text-align: center;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 1009px;
+    height: 237px;
 }
 
-
-.pro img {
-    border-radius: 50%;
+.avatar div {
     width: 150px;
-    height: 150px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    line-height: 0;
+    
+}
+.avatar div img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50%;
 }
 
-.pro h3 {
-    font-weight: 900;
+.avatar div h2 {
+    height: 27px;
+    line-height: 27px;
     font-size: 18px;
 }
-
-.pro p {
+.avatar div p {  
+    height: 48px;
+    line-height: 24px;
     font-style: italic;
     font-size: 16px;
-    line-height: 26px;
+    text-align: center;
 }
 
 .testimonials {
-    background-color: var(--third-color);
+    margin-top: 115px;  
+    width: 100%;
+    background-color: #c271ff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 392px;
 }
 
@@ -209,10 +224,9 @@ blockquote {
     background-color: var(--main-color);
     position: absolute;
     width: 1228px;
-    height: 450px;
+    height: 1000px;
     left: 50%;
     transform: translateX(-50%);
-    top: 1572px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -368,6 +382,7 @@ img.preview {
     top: 2678px;
     width: 920px;
     height: 707px;
+    background-color: var(--main-color);
     color: var(--secondary-color);
     left: 50%;
     transform: translateX(-50%);
